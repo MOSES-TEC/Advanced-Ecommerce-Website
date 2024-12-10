@@ -1,0 +1,23 @@
+{% autoescape off %}
+
+Hi {{ user.full_name }},
+
+YOUR ORDER HAS BEEN RECEIVED SUCCESSFULLY!
+
+Thank you for your order! We're happy to confirm that your order, order Number: {{ order.order_number }} has been successfully placed on {{order.created_at}}.
+
+Shipping Information:
+{{ user.full_name }}
+{{order.full_address}}
+{{order.city}}, {{order.pincode}},
+{{order.state}}, {{order.country}}.
+Shipping Method: Standard Shipping
+Payment Method: PayPal 
+
+Thank you for shopping with us! We hope to see you again soon.
+
+Best regards,
+CloudEcom
+www.cloudecom.niporaverse.in
+
+{% endautoescape %}
